@@ -20,3 +20,5 @@ package com.example.cookbook
    2. Add functionality 
       1. Save the text written in the search field in a string to a file when the search button is pressed.  -> Done
       2. Get the recipe data via the name of the recipe
+         1. Convert the xlsx into sqlite -> Done
+         2. Add the functionality to get the data 
