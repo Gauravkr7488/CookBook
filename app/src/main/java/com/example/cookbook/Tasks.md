@@ -13,12 +13,15 @@ package com.example.cookbook
         1. A live help while cooking like a chatbot maybe or alarms 
 
 2. Process
-   1. Create the Home page
-       1. Home page should have :-
-           1. A search bar  -> Done
-           2. A search button -> Done
+   1. Create the Home page -> Done
+      1. A search bar  -> Done
+      2. A search button -> Done
    2. Add functionality 
       1. Save the text written in the search field in a string to a file when the search button is pressed.  -> Done
       2. Get the recipe data via the name of the recipe
          1. Convert the xlsx into sqlite -> Done
          2. Add the functionality to get the data 
+            1. Set up the database file and ensure it can be queried.
+               1. add the database in the app's internal storage.
+            2. Use SQLite or Room Database to access and search for data in the database.
+            3. Display the query results in your Compose UI. 
