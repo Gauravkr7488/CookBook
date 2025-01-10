@@ -22,6 +22,6 @@ package com.example.cookbook
          1. Convert the xlsx into sqlite -> Done
          2. Add the functionality to get the data 
             1. Set up the database file and ensure it can be queried.
-               1. add the database in the app's internal storage.
+               1. add the database in the app's internal storage. -> Done
             2. Use SQLite or Room Database to access and search for data in the database.
             3. Display the query results in your Compose UI. 
