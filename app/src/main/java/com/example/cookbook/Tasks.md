@@ -24,4 +24,7 @@ package com.example.cookbook
             1. Set up the database file and ensure it can be queried.
                1. add the database in the app's internal storage. -> Done
             2. Use SQLite or Room Database to access and search for data in the database.
+               1. Add room in the project -> Done
+               2. make the room to get the data for you -> **doing** 
+                  1. I am unable to understand how to do it so lets make a mini project with room
             3. Display the query results in your Compose UI. 
