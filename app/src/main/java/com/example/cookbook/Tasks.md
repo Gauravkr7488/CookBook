@@ -36,6 +36,9 @@ package com.example.cookbook
                      6. factory -> done 30%
                   3. Debug the code 
                      1. Nothing is showing on the search bar -> done
-                     2. Is is non resposive -> 
+                     2. Is is non resposive -> done
+                     3. Figure out why the data is not coming
+                        1. is the databse populated? -> yes it is now Done
+                        2. 
                   
             3. Display the query results in your Compose UI. 
