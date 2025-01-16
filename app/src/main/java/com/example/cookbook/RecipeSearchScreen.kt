@@ -9,21 +9,26 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.Divider
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import kotlinx.coroutines.launch
 
 
 @Composable
 fun RecipeSearchScreen(viewModel: RecipeViewModel) {
+    var searchQuery by remember { mutableStateOf("") }
     val recipes = viewModel.recipes.collectAsState().value
     val coroutineScope = rememberCoroutineScope()
 
     Column {
         BasicTextField(
-            value = "",
-            onValueChange = { query ->
+            value = searchQuery,
+            onValueChange = { query -> searchQuery = query
                 coroutineScope.launch { viewModel.searchRecipe(query) }
             },
             modifier = Modifier.fillMaxWidth(),

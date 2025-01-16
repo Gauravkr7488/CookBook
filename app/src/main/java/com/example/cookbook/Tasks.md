@@ -25,6 +25,13 @@ package com.example.cookbook
                1. add the database in the app's internal storage. -> Done
             2. Use SQLite or Room Database to access and search for data in the database.
                1. Add room in the project -> Done
-               2. make the room to get the data for you -> **doing** 
+               2. make the room to get the data for you -> 
                   1. I am unable to understand how to do it so lets make a mini project with room -> done
+                  2. Debug and understand the code -> 
+                     1. Dataclass -> done
+                     2. Dao -> done
+                     3. Database -> done 90%
+                     4. DatabaseProvider -> done 50%
+                     5. viewModel -> 90%
+                     6. factory -> 
             3. Display the query results in your Compose UI. 
