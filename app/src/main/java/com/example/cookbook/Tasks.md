@@ -27,11 +27,15 @@ package com.example.cookbook
                1. Add room in the project -> Done
                2. make the room to get the data for you -> 
                   1. I am unable to understand how to do it so lets make a mini project with room -> done
-                  2. Debug and understand the code -> 
+                  2. Understand the code -> 
                      1. Dataclass -> done
                      2. Dao -> done
                      3. Database -> done 90%
                      4. DatabaseProvider -> done 50%
-                     5. viewModel -> 90%
-                     6. factory -> 
+                     5. viewModel -> done 90%
+                     6. factory -> done 30%
+                  3. Debug the code 
+                     1. Nothing is showing on the search bar -> done
+                     2. Is is non resposive -> 
+                  
             3. Display the query results in your Compose UI. 
