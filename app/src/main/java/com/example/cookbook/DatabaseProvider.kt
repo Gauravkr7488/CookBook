@@ -11,7 +11,7 @@ object DatabaseProvider {
             INSTANCE = Room.databaseBuilder(
                 context.applicationContext,
                 AppDatabase::class.java,
-                "Indori.db"
+                "recipes_database"
             )
                 .createFromAsset("Indori.db")
                 .build()

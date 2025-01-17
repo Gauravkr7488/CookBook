@@ -1,19 +1,21 @@
 package com.example.cookbook
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "data")
 data class RecipeData(
-    @PrimaryKey(autoGenerate = true) val id: Int = 0,
-    val Meal: String,
-    val RecipeName: String,
-    val Links: String,
-    val Type: String,
-    val Cuisine: String,
-    val TimeToPrepare: String, // Use proper formatting for time if needed
-    val Ingredients: String,
-    val Instructions: String,
-    val NewIngredients: String,
-    val ImageLink: String
+    @PrimaryKey @ColumnInfo(name = "id") val id: Int,
+    @ColumnInfo(name = "Meal") val meal: String?,
+    @ColumnInfo(name = "Recipe Name") val recipeName: String?,
+    @ColumnInfo(name = "Links") val links: String?,
+    @ColumnInfo(name = "Type") val type: String?,
+    @ColumnInfo(name = "Cuisine") val cuisine: String?,
+    @ColumnInfo(name = "Time to Prepare(in min)") val timeToPrepare: String?,
+    @ColumnInfo(name = "Ingredients") val ingredients: String?,
+    @ColumnInfo(name = "Instructions") val instructions: String?,
+    @ColumnInfo(name = "New Ingredients") val newIngredients: String?,
+    @ColumnInfo(name = "Image Link") val imageLink: String?
+
 )

@@ -56,9 +56,9 @@ fun RecipeSearchScreen(viewModel: RecipeViewModel) {
         LazyColumn {
             items(recipes) { recipe ->
                 Column {
-                    Text(text = "Name: ${recipe.RecipeName}")
-                    Text(text = "Ingredients: ${recipe.Ingredients}")
-                    Text(text = "Instructions: ${recipe.Instructions}")
+                    Text(text = "Name: ${recipe.recipeName}")
+//                    Text(text = "Ingredients: ${recipe.Ingredients}")
+//                    Text(text = "Instructions: ${recipe.Instructions}")
                     Divider()
                 }
             }
