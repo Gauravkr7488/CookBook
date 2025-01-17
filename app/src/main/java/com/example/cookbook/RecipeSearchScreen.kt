@@ -57,8 +57,8 @@ fun RecipeSearchScreen(viewModel: RecipeViewModel) {
             items(recipes) { recipe ->
                 Column {
                     Text(text = "Name: ${recipe.recipeName}")
-//                    Text(text = "Ingredients: ${recipe.Ingredients}")
-//                    Text(text = "Instructions: ${recipe.Instructions}")
+                    Text(text = "Ingredients: ${recipe.ingredients}")
+                    Text(text = "Instructions: ${recipe.instructions}")
                     Divider()
                 }
             }

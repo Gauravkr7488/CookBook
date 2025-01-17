@@ -18,14 +18,14 @@ package com.example.cookbook
       2. A search button -> Done
    2. Add functionality 
       1. Save the text written in the search field in a string to a file when the search button is pressed.  -> Done
-      2. Get the recipe data via the name of the recipe
+      2. Get the recipe data via the name of the recipe -> done
          1. Convert the xlsx into sqlite -> Done
-         2. Add the functionality to get the data 
+         2. Add the functionality to get the data  -> Done
             1. Set up the database file and ensure it can be queried.
                1. add the database in the app's internal storage. -> Done
             2. Use SQLite or Room Database to access and search for data in the database.
                1. Add room in the project -> Done
-               2. make the room to get the data for you -> 
+               2. make the room to get the data for you -> done
                   1. I am unable to understand how to do it so lets make a mini project with room -> done
                   2. Understand the code -> 
                      1. Dataclass -> done
@@ -37,8 +37,7 @@ package com.example.cookbook
                   3. Debug the code 
                      1. Nothing is showing on the search bar -> done
                      2. Is is non resposive -> done
-                     3. Figure out why the data is not coming
+                     3. Figure out why the data is not coming -> done
                         1. is the databse populated? -> yes it is now Done
-                        2. 
-                  
-            3. Display the query results in your Compose UI. 
+                        2. The schema was not matching so had to edit the database -> Done 
+            3. Display the query results in your Compose UI.  -> done
