@@ -41,3 +41,4 @@ package com.example.cookbook
                         1. is the databse populated? -> yes it is now Done
                         2. The schema was not matching so had to edit the database -> Done 
             3. Display the query results in your Compose UI.  -> done
+      3. Get the data in a Orderly manner

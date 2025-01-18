@@ -71,7 +71,7 @@ dependencies {
     // No additional plugins are necessary
     annotationProcessor(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
-
+    implementation (libs.androidx.navigation.compose) //for screen switching
 
 
 }

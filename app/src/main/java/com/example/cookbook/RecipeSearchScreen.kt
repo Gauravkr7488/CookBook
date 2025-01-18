@@ -1,6 +1,7 @@
 package com.example.cookbook
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.Column
@@ -27,7 +28,10 @@ import kotlinx.coroutines.launch
 
 
 @Composable
-fun RecipeSearchScreen(viewModel: RecipeViewModel) {
+fun RecipeSearchScreen(
+    viewModel: RecipeViewModel,
+    onRecipeClick: (Int) -> Unit
+    ) {
     var searchQuery by remember { mutableStateOf("") }
     val recipes = viewModel.recipes.collectAsState().value
     val coroutineScope = rememberCoroutineScope()
@@ -55,10 +59,14 @@ fun RecipeSearchScreen(viewModel: RecipeViewModel) {
 
         LazyColumn {
             items(recipes) { recipe ->
-                Column {
+                Column(
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .background(Color.LightGray)
+                        .fillMaxWidth()
+                        .clickable { onRecipeClick(recipe.id) } // Use onRecipeClick when clicked
+                ) {
                     Text(text = "Name: ${recipe.recipeName}")
-                    Text(text = "Ingredients: ${recipe.ingredients}")
-                    Text(text = "Instructions: ${recipe.instructions}")
                     Divider()
                 }
             }
