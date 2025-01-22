@@ -44,6 +44,9 @@ package com.example.cookbook
       3. Get the data in a Orderly manner -> added navigation to detail screen -> done
       4. add the feature where you are able to get the recipe list based on the selection of ingredients -> **doing**
          1. Make a separate table for the ingredients -> done
-         2. Setup everything to be able to access the table
+         2. Setup everything to be able to access the table -> done
+         3. Fine tune the Feature
+            1.  recommend what to select during the search, either add an external db or create your own keep room for custom 
+            2. fully refine the feature so its on the level of other apps.
       5. Maybe get the apis now?
       6. add the youtube recommendation feature 
