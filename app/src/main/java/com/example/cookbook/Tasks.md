@@ -41,4 +41,9 @@ package com.example.cookbook
                         1. is the databse populated? -> yes it is now Done
                         2. The schema was not matching so had to edit the database -> Done 
             3. Display the query results in your Compose UI.  -> done
-      3. Get the data in a Orderly manner
+      3. Get the data in a Orderly manner -> added navigation to detail screen -> done
+      4. add the feature where you are able to get the recipe list based on the selection of ingredients -> **doing**
+         1. Make a separate table for the ingredients 
+         2. Setup everything to be able to access the table
+      5. Maybe get the apis now?
+      6. add the youtube recommendation feature 
