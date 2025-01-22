@@ -43,7 +43,7 @@ package com.example.cookbook
             3. Display the query results in your Compose UI.  -> done
       3. Get the data in a Orderly manner -> added navigation to detail screen -> done
       4. add the feature where you are able to get the recipe list based on the selection of ingredients -> **doing**
-         1. Make a separate table for the ingredients 
+         1. Make a separate table for the ingredients -> done
          2. Setup everything to be able to access the table
       5. Maybe get the apis now?
       6. add the youtube recommendation feature 

@@ -15,4 +15,10 @@ class RecipeViewModel(private val dao: RecipeDao) : ViewModel() {
             _recipes.value = dao.searchRecipeByName(query)
         }
     }
+
+    fun searchByIngredient(ingredient: String) {
+        viewModelScope.launch {
+            _recipes.value = dao.searchRecipesByIngredient(ingredient)
+        }
+    }
 }

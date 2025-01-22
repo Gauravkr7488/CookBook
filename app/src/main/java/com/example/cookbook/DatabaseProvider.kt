@@ -13,7 +13,8 @@ object DatabaseProvider {
                 AppDatabase::class.java,
                 "recipes_database"
             )
-                .createFromAsset("Indori.db")
+                .createFromAsset("Indori2.db")
+                .addMigrations(MIGRATION_1_2)
                 .build()
         }
         return INSTANCE!!
